@@ -1,6 +1,6 @@
 const router = require("express").Router();
 
-router.get("/", (req, res) => {
+router.post("/", (req, res) => {
   setTimeout(() => {
     const random = Math.random();
     if (random < 0.2) return res.send("checkout failed").status(400);
